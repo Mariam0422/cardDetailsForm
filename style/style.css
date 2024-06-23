@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.root {
+  height: 100vh;
+  display: flex;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+.root .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.root .main .section input {
+  margin-bottom: 15px;
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.root .main .section .miniSection {
+  display: flex;
+}
+.root .main .section .miniSection input {
+  width: 50px;
+  margin-right: 10px;
+}
+.root .main .section button {
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #300530;
+  background-color: #300530;
+  color: white;
+}

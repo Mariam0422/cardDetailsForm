@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.root{
+    height: 100vh;
+    display: flex;
+    font-size: 12px;
+    font-family: sans-serif;
+    .main{  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+        height: 100%;
+        width: 100%;
+        .section{   
+             input{
+                margin-bottom: 15px;
+                width: 250px;
+                height: 30px;
+                border-radius: 5px;
+                border: 1px solid black;
+             }
+             .miniSection{
+                display: flex;
+                input{
+                    width: 50px; 
+                    margin-right: 10px;                 
+                }
+            }
+            button{
+                width: 250px;
+                height: 30px;
+                border-radius: 5px;
+                border: 1px solid rgb(48, 5, 48);
+                background-color: rgb(48, 5, 48);
+                color: white;
+            }
+        }
+    }
+}

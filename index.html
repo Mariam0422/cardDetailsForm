@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="root">
+<div class="background">
+    <img src="./images/bg-main-desktop.png" alt="">
+</div>
+<div class="main">
+    <div class="section">
+        <label for="cardHolder">
+            <p> CARDHOLDER NAME</p>           
+            <input type="text" id="cardHolder" placeholder="Anahit Saroyan">
+        </label>
+        <br>
+        <label for="cardNumber">
+            <p> CARD NUMBER</p>          
+            <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000">
+        </label>
+        <br>
+        <div class="miniSection">
+            <label>
+                <p> EXP. DATE (MM/YY)</p>             
+                <input type="text" placeholder="MM">
+                <input type="text" placeholder="YY">
+            </label>
+            <label>
+                <p> CVC</p>               
+                <input type="text" placeholder="000">
+            </label>
+        </div>
+        <button>Confirm</button>
+    </div>
+</div>
+    </div>
+    <div class="card-front"></div>
+    <div class="card-back"></div>
+    <script src="./script/index.js"></script>
+</body>
+</html>
