@@ -1,0 +1,14 @@
+export const button = document.getElementById("confirm");
+export const cardHolder = document.getElementById("cardHolder");
+export const cardNumber = document.getElementById("cardNumber");
+export const mm = document.getElementById("mm");
+export const yy = document.getElementById("yy");
+export const cvv = document.getElementById("cvv");
+export const card_int = document.getElementById("card_int");
+export const cardHolderName = document.getElementById("cardHolderName");
+export const cardDate = document.getElementById("cardDate");
+export const blankOne = document.getElementById("blankOne");
+export const blankTwo = document.getElementById("blankTwo");
+export const blankThree = document.getElementById("blankThree");
+export const blankFour = document.getElementById("blankFour");
+export const blank = document.getElementsByClassName("blank")

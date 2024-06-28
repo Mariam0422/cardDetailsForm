@@ -23,6 +23,11 @@
   border-radius: 5px;
   border: 1px solid black;
 }
+.root .main .section .blank {
+  margin-top: -10px;
+  color: red;
+  display: none;
+}
 .root .main .section .miniSection {
   display: flex;
 }
