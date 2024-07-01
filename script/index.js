@@ -13,6 +13,7 @@ import {
   blankThree,
   blankFour,
   blank,
+  section
 } from "./constant.js";
 
 function formatCardNumber(number) {
@@ -69,7 +70,7 @@ function validateFields() {
     blankTwo.style.display = "block";
     value = false;
   }
-  if (cardNumber.value.length > 1 && cardNumber.value.length < 16) {
+  if (cardNumber.value.length < 16) {
     blankTwo.innerText = "The card number must consist of 16 characters.";
     blankTwo.style.display = "block";
     value = false;
@@ -86,11 +87,32 @@ function validateFields() {
   }
   return value;
 }
+function removeText() {
+  cardNumber.value = "";
+  cardHolder.value = "";
+  mm.value = "";
+  yy.value = "";
+  cvv.value = "";
+}
+cardHolder.addEventListener("input", () => {
+ blankOne.style.display = "none";
+});
+mm.addEventListener("input", () => {
+  blankThree.style.display = "none"
+})
+yy.addEventListener("input", () => {
+  blankThree.style.display = "none"
+})
+cvv.addEventListener("input", () => {
+  blankFour.style.display = "none"
+})
 
 button.addEventListener("click", () => {
   const formNumber = formatCardNumber(cardNumber.value);
   card_int.innerHTML = formNumber;
   cardHolderName.innerHTML = cardHolder.value;
   cardDate.innerHTML = `${mm.value}/${yy.value}`;
-  validateFields();
+ if(validateFields()){
+   removeText();
+ }
 });
