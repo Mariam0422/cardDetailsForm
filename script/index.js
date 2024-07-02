@@ -12,8 +12,9 @@ import {
   blankTwo,
   blankThree,
   blankFour,
-  blank,
-  section
+  windowConfirm,
+  section,
+  continueButton
 } from "./constant.js";
 
 function formatCardNumber(number) {
@@ -106,7 +107,22 @@ yy.addEventListener("input", () => {
 cvv.addEventListener("input", () => {
   blankFour.style.display = "none"
 })
+function changeWindow(){
+ section.style.display = "none";
+ windowConfirm.style.display = "block"
+}
 
+function checkScreenWidth(){
+  if(validateFields){
+    if(window.matchMedia("(max-width: 800px)").matches){
+      button.addEventListener("click", changeWindow)
+    }  
+  }
+}
+continueButton.addEventListener("click", (() => {
+  section.style.display = "block";
+  windowConfirm.style.display = "none";
+}))
 button.addEventListener("click", () => {
   const formNumber = formatCardNumber(cardNumber.value);
   card_int.innerHTML = formNumber;
@@ -116,3 +132,4 @@ button.addEventListener("click", () => {
    removeText();
  }
 });
+window.addEventListener('resize', checkScreenWidth)

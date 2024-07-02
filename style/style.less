@@ -43,7 +43,39 @@
                 color: white;
             }
         }
+        .window{
+            width: 70%;
+            background-color: white;
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px;
+            display: none;
+            h2{
+                width: 20px;
+                padding: 5px;
+               margin:  0 auto;
+                border: 1px solid rgb(48, 5, 48);
+                border-radius: 50%;
+            }
+            h1{
+                margin-top: 20px;
+                font-size: 30px;
+            }
+            p {
+                margin-top: 20px;
+            }
+            button{
+                width: 250px;
+                height: 30px;
+                border-radius: 5px;
+                border: 1px solid rgb(48, 5, 48);
+                background-color: rgb(48, 5, 48);
+                color: white;
+                margin-top: 20px;
+            }
+        }
     }
+
     }
 
         .card_front{
@@ -60,6 +92,7 @@
             border-radius: 10px;
             padding: 20px;
             font-family: sans-serif;
+      
             .filled_circle{
                 width: 35px;
                 height: 35px;
@@ -102,4 +135,27 @@
         z-index: 999999;
         border-radius: 10px;  
         padding: 20px;
+       
+    }
+    @media (max-width: 800px){
+      .root{
+        .background{
+            img{
+                width: 100%;
+                height: 200px;
+            }
+        }      
+        flex-direction: column;
+        .section{
+            margin-top: 150px;
+        }
+      }
+      .card_front {
+        top: 25%;
+        left: 5%;
+        z-index: 99999999;       
+    }
+    .card_back{
+        top: 5%;        
+    }
     }

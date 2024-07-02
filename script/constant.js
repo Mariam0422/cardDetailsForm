@@ -12,4 +12,6 @@ export const blankTwo = document.getElementById("blankTwo");
 export const blankThree = document.getElementById("blankThree");
 export const blankFour = document.getElementById("blankFour");
 export const blank = document.getElementsByClassName("blank");
-export const section = document.getElementById("section")
+export const section = document.getElementById("section");
+export const windowConfirm = document.getElementById("window");
+export const continueButton = document.getElementById("continue");

@@ -43,6 +43,37 @@
   background-color: #300530;
   color: white;
 }
+.root .main .window {
+  width: 70%;
+  background-color: white;
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  display: none;
+}
+.root .main .window h2 {
+  width: 20px;
+  padding: 5px;
+  margin: 0 auto;
+  border: 1px solid #300530;
+  border-radius: 50%;
+}
+.root .main .window h1 {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.root .main .window p {
+  margin-top: 20px;
+}
+.root .main .window button {
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #300530;
+  background-color: #300530;
+  color: white;
+  margin-top: 20px;
+}
 .card_front {
   position: absolute;
   top: 10%;
@@ -97,4 +128,24 @@
   z-index: 999999;
   border-radius: 10px;
   padding: 20px;
+}
+@media (max-width: 800px) {
+  .root {
+    flex-direction: column;
+  }
+  .root .background img {
+    width: 100%;
+    height: 200px;
+  }
+  .root .section {
+    margin-top: 150px;
+  }
+  .card_front {
+    top: 25%;
+    left: 5%;
+    z-index: 99999999;
+  }
+  .card_back {
+    top: 5%;
+  }
 }
